@@ -1,0 +1,361 @@
+@import "./reset";
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+$primaricolor: #21243D;
+
+@mixin d-flex($justifyContent, $alignItems) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin background-position($backgroundSize, $backgroundRepeat) {
+    background-position: center;
+    background-size: $backgroundSize;
+    background-repeat: $backgroundRepeat;
+
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    color: $primaricolor;
+
+    header {
+
+        margin-bottom: 158px;
+        padding-top: 27px;
+
+        .header-content {
+            .portfolio {
+                font-size: 30px;
+                font-weight: 600;
+
+
+                color: #9e9254;
+                background-image: -webkit-linear-gradient(0deg, #9e9254 21%, #7df5e3 98%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+
+            a {
+                font-size: 25px;
+                font-weight: 500;
+
+
+                color: #ff5722;
+                background-image: -webkit-linear-gradient(0deg, #ff5722 15%, #f57dc1 98%);
+                background-clip: text;
+                -webkit-background-clip: text;
+
+                -webkit-text-fill-color: transparent;
+
+            }
+
+            @include d-flex (space-between, center);
+            min-height: 70px;
+
+            .nav-list {
+
+                display: flex;
+                column-gap: 30px;
+                padding-right: 52px;
+
+                .burger-menu {
+                    display: none;
+                }
+
+                @media (max-width:780px) {
+
+                    li {
+                        display: none;
+                    }
+
+                    .burger-menu {
+                        display: block;
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+    .about-content {
+
+        @media (max-width:780px) {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            padding-right: 40px;
+
+            .About-name {
+                text-align: center;
+
+            }
+
+            .about-image {
+                margin-bottom: 20px;
+                @include d-flex(center, start);
+            }
+
+
+        }
+
+        padding: 30px 140px 0px 0px;
+
+
+        @include d-flex(start, start);
+        column-gap: 208px;
+
+        .about-text {
+            width: 560px;
+            height: 300px;
+
+            .About-name {
+                font-weight: 700;
+                font-size: 44px;
+                line-height: 60px;
+                // width: 299px;
+
+                &:hover {
+                    color: red;
+                }
+            }
+
+            .my-info {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                margin-top: 40px;
+            }
+        }
+
+        .about-image {
+            background-image: url(../image/diba.jpg);
+            Width: 243px;
+            Height: 243px;
+            @include background-position(cover, no-repeat);
+            border-radius: 50%;
+        }
+
+
+    }
+
+
+    .skills {
+
+        min-height: 250px;
+        margin-top: 30px;
+
+
+        .skills-content {
+
+
+
+
+
+            .skills-tittle {
+                font-size: 28px;
+                font-weight: 700;
+            }
+
+            .skill-list {
+                margin-top: 50px;
+                @include d-flex(start, start);
+                column-gap: 30px;
+
+                .my-skills {
+                    width: 90px;
+                    height: 90px;
+
+                    @include d-flex(start, start);
+                    flex-direction: column;
+                    align-items: center;
+
+                    .card-img {
+                        @include background-position(cover, no-repeat);
+                        width: 60px;
+                        height: 60px;
+
+                    }
+
+                    .skill-image1 {
+                        background-image: url(../image/html.png);
+
+                    }
+
+                    .skill-image2 {
+                        background-image: url(../image/css.png);
+
+                    }
+
+                    .skill-image3 {
+                        background-image: url(../image/Sass.png);
+
+                    }
+
+                    .skill-image4 {
+                        background-image: url(../image/figma-logo-E4E21D3AEA-seeklogo.com.png);
+
+                    }
+
+                    .skill-image5 {
+                        background-image: url(../image/xd.png);
+
+                    }
+
+                    h3 {
+                        margin-top: 20px;
+                    }
+                }
+
+                @media (max-width:780px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    row-gap: 15px;
+                    justify-content: space-around;
+
+                    .skills-tittle {
+                        color: red;
+                    }
+                }
+
+
+
+            }
+        }
+
+
+
+    }
+
+    .project1 {
+        .project-content {
+            display: flex;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            row-gap: 20px;
+
+
+
+            .project-box {
+                width: 360px;
+                height: 500px;
+                border: 1px solid blue;
+
+                @include d-flex(center, center);
+                flex-direction: column;
+
+                .card-img {
+                    @include background-position(cover, no-repeat);
+                    max-width: 360px;
+
+                    width: 100%;
+                    height: 50%;
+                    margin-bottom: 40px;
+                }
+
+                .project-img1 {
+                    background-image: url(../image/signup.PNG);
+
+                }
+
+                .project-img2 {
+                    background-image: url(../image/nature.PNG);
+
+                }
+
+                .project-img3 {
+                    background-image: url(../image/sawyisi.PNG);
+
+                }
+
+                .project-img4 {
+                    background-image: url(../image/signup.PNG);
+
+                }
+
+                .project-img5 {
+                    background-image: url(../image/signup.PNG);
+
+                }
+
+                .project-img6 {
+                    background-image: url(../image/signup.PNG);
+
+                }
+
+                .project-tittle {
+                    font-size: 26px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+
+
+                }
+
+                .project-stack {
+                    font-size: 24px;
+                    font-weight: 500;
+
+
+                }
+
+                .stack-list {
+                    color: green;
+                    display: flex;
+                    column-gap: 10px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-top: 20px;
+
+                }
+
+                .link {
+                    width: 100%;
+                    @include d-flex(space-around, start);
+                    margin-top: 20px;
+
+
+
+
+                    .linkss {
+                        border: 1px solid red;
+                        border-radius: 50px;
+                        padding: 6px 10px;
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                }
+
+
+            }
+
+            @media (max-width:780px) {
+                @include d-flex(center, center);
+                padding: 20px 30px 0px;
+            }
+        }
+    }
+
+    .footer-content {
+        margin-top: 40px;
+        height: 150px;
+
+        @include d-flex(space-between, start);
+        padding: 40px 50px 100px 0;
+    }
+
+    .footer-img {
+        display: flex;
+        column-gap: 30px;
+    }
+}

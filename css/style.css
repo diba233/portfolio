@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  color: #21243D;
+}
+body header {
+  margin-bottom: 158px;
+  padding-top: 27px;
+}
+body header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+}
+body header .header-content .portfolio {
+  font-size: 30px;
+  font-weight: 600;
+  color: #9e9254;
+  background-image: -webkit-linear-gradient(0deg, #9e9254 21%, #7df5e3 98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body header .header-content a {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ff5722;
+  background-image: -webkit-linear-gradient(0deg, #ff5722 15%, #f57dc1 98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body header .header-content .nav-list {
+  display: flex;
+  column-gap: 30px;
+  padding-right: 52px;
+}
+body header .header-content .nav-list .burger-menu {
+  display: none;
+}
+@media (max-width: 780px) {
+  body header .header-content .nav-list li {
+    display: none;
+  }
+  body header .header-content .nav-list .burger-menu {
+    display: block;
+  }
+}
+body .about-content {
+  padding: 30px 140px 0px 0px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  column-gap: 208px;
+}
+@media (max-width: 780px) {
+  body .about-content {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-right: 40px;
+  }
+  body .about-content .About-name {
+    text-align: center;
+  }
+  body .about-content .about-image {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+}
+body .about-content .about-text {
+  width: 560px;
+  height: 300px;
+}
+body .about-content .about-text .About-name {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+}
+body .about-content .about-text .About-name:hover {
+  color: red;
+}
+body .about-content .about-text .my-info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 40px;
+}
+body .about-content .about-image {
+  background-image: url(../image/diba.jpg);
+  Width: 243px;
+  Height: 243px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+body .skills {
+  min-height: 250px;
+  margin-top: 30px;
+}
+body .skills .skills-content .skills-tittle {
+  font-size: 28px;
+  font-weight: 700;
+}
+body .skills .skills-content .skill-list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  column-gap: 30px;
+}
+body .skills .skills-content .skill-list .my-skills {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  align-items: center;
+}
+body .skills .skills-content .skill-list .my-skills .card-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+}
+body .skills .skills-content .skill-list .my-skills .skill-image1 {
+  background-image: url(../image/html.png);
+}
+body .skills .skills-content .skill-list .my-skills .skill-image2 {
+  background-image: url(../image/css.png);
+}
+body .skills .skills-content .skill-list .my-skills .skill-image3 {
+  background-image: url(../image/Sass.png);
+}
+body .skills .skills-content .skill-list .my-skills .skill-image4 {
+  background-image: url(../image/figma-logo-E4E21D3AEA-seeklogo.com.png);
+}
+body .skills .skills-content .skill-list .my-skills .skill-image5 {
+  background-image: url(../image/xd.png);
+}
+body .skills .skills-content .skill-list .my-skills h3 {
+  margin-top: 20px;
+}
+@media (max-width: 780px) {
+  body .skills .skills-content .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: space-around;
+  }
+  body .skills .skills-content .skill-list .skills-tittle {
+    color: red;
+  }
+}
+body .project1 .project-content {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+body .project1 .project-content .project-box {
+  width: 360px;
+  height: 500px;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .project1 .project-content .project-box .card-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 360px;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 40px;
+}
+body .project1 .project-content .project-box .project-img1 {
+  background-image: url(../image/signup.PNG);
+}
+body .project1 .project-content .project-box .project-img2 {
+  background-image: url(../image/nature.PNG);
+}
+body .project1 .project-content .project-box .project-img3 {
+  background-image: url(../image/sawyisi.PNG);
+}
+body .project1 .project-content .project-box .project-img4 {
+  background-image: url(../image/signup.PNG);
+}
+body .project1 .project-content .project-box .project-img5 {
+  background-image: url(../image/signup.PNG);
+}
+body .project1 .project-content .project-box .project-img6 {
+  background-image: url(../image/signup.PNG);
+}
+body .project1 .project-content .project-box .project-tittle {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+body .project1 .project-content .project-box .project-stack {
+  font-size: 24px;
+  font-weight: 500;
+}
+body .project1 .project-content .project-box .stack-list {
+  color: green;
+  display: flex;
+  column-gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+body .project1 .project-content .project-box .link {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  margin-top: 20px;
+}
+body .project1 .project-content .project-box .link .linkss {
+  border: 1px solid red;
+  border-radius: 50px;
+  padding: 6px 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (max-width: 780px) {
+  body .project1 .project-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 0px;
+  }
+}
+body .footer-content {
+  margin-top: 40px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 40px 50px 100px 0;
+}
+body .footer-img {
+  display: flex;
+  column-gap: 30px;
+}/*# sourceMappingURL=style.css.map */
